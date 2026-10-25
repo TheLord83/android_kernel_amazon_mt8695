@@ -1,0 +1,17 @@
+config MTK_COMBO_CHIP_MT7668
+	bool "MediaTek MT7668"
+	help
+	  Chip select for MT7668-based platforms. This symbol is used as a build-time
+	  switch in this tree to pick the appropriate WLAN driver implementation.
+
+config MTK_WIFI_MT7663_SDIO
+	bool "MediaTek MT7663 WiFi support"
+	select WIRELESS_EXT
+	select WEXT_PRIV
+	help
+		Say Y here to enable WiFi support for the mt7663 chip.
+
+config MTK_BT_MT7663_SDIO
+	bool "MediaTek MT7663 Bluetooth support"
+	help
+		Say Y here to enable Bluetooth support for the mt7663 chip.
